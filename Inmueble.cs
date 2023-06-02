@@ -36,5 +36,15 @@ namespace POOU4C_Herencia
             this.metrosCuadrados = metrosCuadrados;
             this.numeroEscrituras = numeroEscrituras;
         }
+
+        //Métodom poliformico
+        public virtual void Detalles() {
+            Console.BackgroundColor = ConsoleColor.DarkCyan;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("ConstruTec \n");
+            Console.WriteLine("Detalles de operación.");
+            Console.WriteLine("Dueño: {0}",nombreDueno);
+            Console.WriteLine("Dirección: Calle: {0}. Colonia: {1}. Ciudad: {2}.", calle, colonia, ciudad);
+        }
     }
 }
